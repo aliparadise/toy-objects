@@ -63,7 +63,5 @@ toys.push(playmobil)
 toys.push(speakAndSpell)
 
 for (const toy of toys) {
-    console.log(toy.name)
+    console.log(`The ${toy.manufacturerName} ${toy.name} ${toy.type} costs ${toy.price} dollars.`)
 }
-
-

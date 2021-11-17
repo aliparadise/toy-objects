@@ -11,7 +11,7 @@ const toys= [
     price: 9.99,
 },
 {
-    name: "wooden train",
+    name: "Wooden train",
     id: 2,
     type: "caboose",
     catagory: "model building",
@@ -22,7 +22,7 @@ const toys= [
     price: 5.99 
 },
 {
-    name: "Lego city",
+    name: "Lego City",
     id: 3,
     type: "clock tower",
     catagory: "construction",
@@ -30,8 +30,40 @@ const toys= [
     inStock: 1,
     ordered: 0,
     needToOrder: true,
-    price: 19.99,
+    price: 19.99
 }
 ]
 
-console.log(toys)
+const playmobil= {
+    name: "Playmobil",
+    id: 4,
+    type: "mermaids",
+    catagory: "action figures",
+    manufacturerName: "Brandstätter",
+    inStock: 3,
+    ordered: 3,
+    needToOrder: true,
+    price: 10.99
+}
+
+const speakAndSpell= {
+    name: "Speak and Spell",
+    id: 5,
+    type: "TMS5100",
+    catagory: "educational",
+    manufacturerName: "Texas Instruments",
+    inStock: 5,
+    ordered: 8,
+    needToOrder: false,
+    price: 24.99
+}
+
+toys.push(playmobil)
+
+toys.push(speakAndSpell)
+
+for (const toy of toys) {
+    console.log(toy.name)
+}
+
+

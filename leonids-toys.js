@@ -65,3 +65,8 @@ toys.push(speakAndSpell)
 for (const toy of toys) {
     console.log(`The ${toy.manufacturerName} ${toy.name} ${toy.type} costs ${toy.price} dollars.`)
 }
+
+for (const toy of toys) {
+    toy.price = toy.price + .5
+    console.log(`The ${toy.manufacturerName} ${toy.name} ${toy.type} costs ${toy.price} dollars.`)
+}

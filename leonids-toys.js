@@ -70,3 +70,32 @@ for (const toy of toys) {
         console.log(`The ${toy.manufacturerName} ${toy.name} ${toy.type} costs ${toy.price} dollars.`)
     }
 }
+
+const addToyToInventory = (toyObject) => {
+    const lastIndex = toys.length - 1
+    const currentLastToy = toys[lastIndex]
+    const maxId = currentLastToy.id
+    const idForNewToy = maxId + 1
+
+    toyObject.id = idForNewToy
+    toys.push(toyObject)
+}
+
+const Kaleidoscope= {
+    name: "Kaleidoscope",
+    type: "stars",
+    catagory: "science",
+    manufacturerName: "Kaleidoscope World",
+    inStock: 3,
+    ordered: 0,
+    needToOrder: true,
+    price: 5.99
+}
+
+addToyToInventory(Kaleidoscope)
+
+for ( const toy of toys) {
+    console.log(`The ${toy.manufacturerName} ${toy.name} ${toy.type} costs ${toy.price} dollars.`)
+}
+
+console.log(toys)
